@@ -1,0 +1,9 @@
+13-jun-2020:11:48:pm == created two functions in the common.js file, function named getContentList accepts a string
+                        type arguement which signifies the path of the server directory and returns back a list of all the subdirectories
+                        inside the given directory.
+                        function named getFileObj accepts a string arguement which signifies the path of the folder in which the requested stream
+                        file is stored, and returns a json object with required properties.
+14-jun-2020:11:48:pm == created modules for movie and web shows, created rouotes for movies and web shows,
+                        integrated all the code in the starting point of the server.js
+                        the code is completed for initial build
+                                                

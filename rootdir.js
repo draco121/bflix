@@ -1,0 +1,1 @@
+module.exports.rootdir = __dirname
