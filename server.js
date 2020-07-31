@@ -13,7 +13,7 @@ app.use(function(req, res, next) {
   });
 
   //middileware to serve static files
-app.use(express.static('assets/client/'))
+app.use(express.static('website/'))
 
 //using movies router to process all movie related api calls
 app.use('/movie',movies)

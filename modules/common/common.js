@@ -5,6 +5,7 @@ defined here*/
 
 const fs = require('fs') //file system module instance
 const path = require('path') //path module instance
+const tree = require("directory-tree")
 const root = require('../../rootdir.js')
 
 
@@ -14,16 +15,15 @@ var common = {
 
     //function to get all the content inside the given directory, returns array of directories inside the given directory
     getContentList: (arg)=>{
-        var result = fs.readdirSync(arg)
-        return result;  
+         return tree.DirectoryTree(arg)  
     },
 
     //function to get the information of the requested stream file, returns an object of type fileobj
-    getFileObj: (arg)=>{
+    getFileProp: (arg)=>{
         var files = fs.readdirSync(arg)
         for(file of files)
         { 
-            console.log(file)
+            //console.log(file)
             var ext = path.extname(file)
             fileobj.path = arg+file
             if(ext==='.flv'){

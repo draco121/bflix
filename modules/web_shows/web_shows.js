@@ -9,20 +9,9 @@ var  web_shows = {
     getShowList: ()=>{
         return common.getContentList(root.rootdir+'/repo/web_shows/')
     },
-    
-    //function to fetch the list of seasons of the perticular show
-    getSeasonList: (name)=>{
-        return common.getContentList(root.rootdir+'/repo/web_shows/'+name+'/')
-    },
 
-    //function to get the list of episodes of the provided season of show
-    getEpisodeList: (name,season)=>{
-        return common.getContentList(root.rootdir+'/repo/web_shows/'+name+'/'+season+'/')
-    },
-
-    //function to get the info of the episode file
-    getEpisodeInfo: (name,season,episode)=>{
-        return common.getFileObj(root.rootdir+'/repo/web_shows/'+name+'/'+season+'/'+episode+'/')
+    getEpisodeInfo:(name)=>{
+        return common.getFileProp(root.rootdir+'/repo/web_shows/'+name+'/')
     }
 }
 

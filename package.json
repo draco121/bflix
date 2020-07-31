@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/draco121/bflix#readme",
   "dependencies": {
+    "directory-tree": "^2.2.4",
     "express": "^4.17.1",
     "ip": "^1.1.5",
     "path": "^0.12.7"

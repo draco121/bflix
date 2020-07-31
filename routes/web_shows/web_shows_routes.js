@@ -21,10 +21,10 @@ shows_router.get('/fetch/:name/:season',(req,res)=>{
 })
 
 //this route will initiate the stream of the perticular episode
-shows_router.get('/stream/:name/:season/:episode',(req,res)=>{
+shows_router.get('/stream/:name',(req,res)=>{
 
     //getting the file info from the directory
-    var f = web_shows.getEpisodeInfo(req.params.name,req.params.season,req.params.episode)
+    var f = web_shows.getEpisodeInfo(req.param.name)
     fileSize = fs.statSync(f.path).size
     
     //building the response
