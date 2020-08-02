@@ -11,7 +11,7 @@ var  web_shows = {
     },
 
     getEpisodeInfo:(name)=>{
-        return common.getFileProp(root.rootdir+'/repo/web_shows/'+name+'/')
+        return common.getFileProp(root.rootdir+'/repo/web_shows/',name)
     }
 }
 

@@ -13,7 +13,7 @@ var movie = {
             //function to return the info of the selected movie
             getMovieInfo: (name)=>{
                    // return common.getFileProp(root.rootdir+'/repo/movies/'+name+'/')
-                   return common.getFileProp(root.rootdir+'/repo/movies/'+name)
+                   return common.getFileProp(root.rootdir+'/repo/movies/',name)
 
             }
 
