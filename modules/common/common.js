@@ -20,12 +20,12 @@ var common = {
 
     //function to get the information of the requested stream file, returns an object of type fileobj
     getFileProp: (arg)=>{
-        var files = fs.readdirSync(arg)
-        for(file of files)
-        { 
+        //var files = fs.readdirSync(arg)
+        //for(file of files)
+        //{ 
             //console.log(file)
-            var ext = path.extname(file)
-            fileobj.path = arg+file
+            var ext = path.extname(arg)
+            fileobj.path = arg
             if(ext==='.flv'){
                 fileobj.mimetype='video/x-flv'
                 break;
@@ -50,7 +50,7 @@ var common = {
                 fileobj.mimetype='video/x-matroska'
                 break;
             }
-        }
+        //}
         return fileobj
     }
 
